@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form class="form" id="form">
+            <h1 class="title">Calculadora de Gorjetas</h1>
+            <label for="bill">
+                <p>Quanto ficou a conta?</p>
+                <input type="number" id="bill" placeholder="R$" class="input_bill input_global" required>
+            </label>
+            <label for="service">
+                <p>Como foi o serviço?</p>
+                <select id="service" class="input_global">
+                    <option value ="0" disabled selected>Qualidade do serviço</option>
+                    <option value="0.3">30% - Incrível</option>
+                    <option value="0.2">20% - Bom</option>
+                    <option value="0.1">10% - Precisa melhorar</option>
+                    <option value="0">0% Péssimo</option>
+                </select>
+            </label>
+            <label for="group">
+                <p>Pessoas que vão dividir</p>
+                <input type="number" id="group" class="input_group input_global" placeholder="0">
+            </label>
+            <p><button type="submit" class="btn">Calcular!</button></p>
+
+            <div id="tip">
+                <h4>Gorjeta total:</h4>
+                R$ <span id="totalGorjeta"></span>
+                <p id="each">Valor por pessoa:
+                    R$ <span id="totalPessoa"></span>
+                </p>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

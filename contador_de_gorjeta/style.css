@@ -1,0 +1,64 @@
+*{
+    margin:0; padding:0;
+}
+:root {
+    --primary-color: lightcoral;
+    --secondary-color: rgb(129, 129, 129);
+    --tertiary-color: Gainsboro;
+}
+body{
+    background-color: var(--primary-color);
+    font-size: 15px;
+}
+input , select, h1{
+    margin: 10px 0px;
+}
+select{
+    text-align: center;
+}
+.title{
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-transform: uppercase;
+}
+.form-container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    box-shadow: 2px 1px 4px rgb(10, 10, 10),
+                -2px -1px 4px rgb(10, 10, 10);
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 20px;
+}
+.input_global:focus{
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+.input_group{
+    width:30px;
+}
+.input_bill{
+    width:60px;
+}
+.btn{
+    padding:5px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.tip{
+    margin-top: 5px;
+}
